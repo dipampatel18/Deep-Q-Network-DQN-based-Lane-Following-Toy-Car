@@ -153,7 +153,7 @@ class rl_sub():
                 done = False
                 rospy.loginfo("MAIN LOOP 2!")
                 self.pub_command.publish("f")
-                while not done:
+                while (not done) and (not rospy.is_shutdown()):
                     decay_step += 1
                     action, explore_probability = self.predict_action(sess, self.explore_start, self.explore_stop, self.decay_rate, decay_step, state, self.possible_actions)
                     if action == self.left:
