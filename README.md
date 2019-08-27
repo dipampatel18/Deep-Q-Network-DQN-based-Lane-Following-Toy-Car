@@ -10,22 +10,24 @@ This project is an attempt to present a reinforcement learning approach using De
 
 Using only the monocular camera image as input, the car is trained to follow the lanes without any previously collected data for training. The algorithm is rewarded based on the distance travelled by the car before it leaves the lane and is stopped by the supervisor by giving a negative reward. A model-free approach based on the trial and error strategy where it keeps updating its knowledge.
 
-<p align="center">
-  <img width="700" height="380" src="/files/TestRun.gif">
-</p>
-
-[Link](https://drive.google.com/file/d/1rllwzH8UelCLR_YSGW9ly_s5jMo-VzgR/view) to Entire Testing Video
-
+#### Training
 <p align="center">
   <img width="700" height="380" src="/files/TrainRun.gif">
 </p>
 
 [Link](https://drive.google.com/file/d/180Qn422pd3R9GoEO2Z3jaWm0X48zOT9E/view) to Entire Training Video 
 
+#### Testing
+<p align="center">
+  <img width="700" height="380" src="/files/TestRun.gif">
+</p>
+
+[Link](https://drive.google.com/file/d/1rllwzH8UelCLR_YSGW9ly_s5jMo-VzgR/view) to Entire Testing Video
+
 From the randomly initialized parameters, the model is trying to learn a policy for lane following and optimizing it on the go. Raspberry Pi 3B+ was used as an onboard processor on the car to stream frames and perform the actions (forward, left and right) received from the computer which acted as the central processor. ROS was used for communication between Raspberry Pi and Computer. Also, Tensorflow 1.8.0 framework was used to train the convolutional neural network
 
 <p align="center">
-  <img width="700" height="380" src="/files/ToyCar.jpg">
+  <img width="700" height="430" src="/files/ToyCar.jpg">
 </p>
 
 The hardware used for the project was-
