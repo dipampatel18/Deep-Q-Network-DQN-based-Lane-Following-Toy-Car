@@ -27,7 +27,7 @@ Using only the monocular camera image as input, the car is trained to follow the
 From the randomly initialized parameters, the model is trying to learn a policy for lane following and optimizing it on the go. Raspberry Pi 3B+ was used as an onboard processor on the car to stream frames and perform the actions (forward, left and right) received from the computer which acted as the central processor. ROS was used for communication between Raspberry Pi and Computer. Also, Tensorflow 1.8.0 framework was used to train the convolutional neural network
 
 <p align="center">
-  <img width="700" height="430" src="/files/Deep-Q-Network-DQN-based-Lane-Following-Toy-Car/ToyCar.jpg">
+  <img width="700" height="430" src="/files/ToyCar.jpg">
 </p>
 
 The hardware used for the project was-
